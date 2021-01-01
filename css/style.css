@@ -243,6 +243,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .section__content {
     display: flex;
+    margin-top: 80px;
     justify-content: space-between;
 }
 
@@ -295,4 +296,40 @@ h1,h2,h3,h4,h5,h6 {
 
 .content__item:hover .item__text {
     opacity: 1;
+}
+
+.stats {
+    background-color: #95e1d3;
+}
+
+.stats__inner {
+    display: flex;
+}
+
+.stats__item {
+    flex: 1 1 0;
+
+    border-left: 1px solid #b5eae0;
+
+    text-align: center;
+
+    color: #fff;
+
+    padding: 90px 0;
+}
+
+.stats__item:last-child {
+    border-right: 1px solid #b5eae0;
+}
+
+.stats__num {
+    font-size: 72px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.stats__text {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
 }
