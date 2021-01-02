@@ -373,3 +373,27 @@ hr {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
 }
+
+.section--devices {
+    background: url("../assets/img/Devices/bg.jpg") center no-repeat;
+    padding-bottom: 0;
+    background-size: cover;
+}
+
+.devices {
+    width: 100%;
+    max-width: 696px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.devices__item {
+    display: block;
+}
+
+.devices__item--iphone {
+    position: absolute;
+    bottom: -90px;
+    right: 0;
+    z-index: 1;
+}
