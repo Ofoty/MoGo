@@ -1,9 +1,13 @@
-document.querySelectorAll('.faq__item').forEach((item) =>
+document.querySelectorAll('.faq__header').forEach((item) =>
   item.addEventListener('click', () => {
-    if(item.classList.contains('faq__item--active')) {
-      item.classList.remove('faq__item--active');
+    const parent = item.parentNode;
+
+
+    if(parent.classList.contains('faq__item--active')) {
+      parent.classList.remove('faq__item--active');
     } else {
-      item.classList.add('faq__item--active');
+      document.querySelectorAll('.faq__item').forEach((child) => child.classList.remove('faq__item--active'))
+      parent.classList.add('faq__item--active')
     }
   })
 )
