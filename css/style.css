@@ -664,3 +664,14 @@ hr {
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
 }
+
+.section--grey {
+    background-color: #f8f8f8;
+    padding-bottom: 80px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
