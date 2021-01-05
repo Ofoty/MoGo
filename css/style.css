@@ -505,9 +505,21 @@ hr {
     position: relative;
 }
 
+.review__content {
+    overflow: hidden;
+
+    width: 1000px;
+}
+
+.reviews__container {
+    display: flex;
+    transition: .5s;
+}
+
 .reviews__item {
     padding-left: 205px;
     position: relative;
+    min-width: 1000px;
 }
 
 .reviews__img {
@@ -550,6 +562,10 @@ hr {
 .reviews__btn {
     font-size: 0;
     color: transparent;
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
 
     position: absolute;
     top: 50%;
@@ -566,7 +582,6 @@ hr {
     border-top: 2px solid #ccc;
     border-left: 2px solid #ccc;
 }
-
 .reviews__btn--prev {
     left: 0;
     
