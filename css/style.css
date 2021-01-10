@@ -509,8 +509,7 @@ hr {
 }
 
 .review__content {
-    overflow: hidden;
-
+    overflow-x: hidden;
     width: 1000px;
 }
 
@@ -594,6 +593,7 @@ hr {
 
 .reviews__btn:disabled::after {
     border-color: #e5e5e5;
+    cursor: default;
 }
 
 .reviews__btn--prev {
@@ -745,4 +745,23 @@ hr {
     font-weight: 300;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
+}
+
+.slider--second {
+    background-color: #fff;
+}
+
+.reviews__item--second {
+    display: flex;
+    position: unset;
+    padding: 0;
+    align-items: center;
+}
+
+.reviews__img--second {
+    position: unset;
+    display: block;
+    margin-right: 30px;
+    padding: 0;
+    border: 0;
 }
