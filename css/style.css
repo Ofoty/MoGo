@@ -4,6 +4,7 @@ body {
     font-size: 15px;
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 *,
@@ -823,4 +824,31 @@ hr {
     color: #999;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog__item {
+    width: 33%;
+}
+
+.blog__header {
+    position: relative;
+}
+
+.blog__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.blog__date {
+    background-color: #95e1d3;
+
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    z-index: 1;
 }
