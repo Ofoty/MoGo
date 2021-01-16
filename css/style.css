@@ -828,15 +828,16 @@ hr {
 
 .blog {
     display: flex;
+    justify-content: space-between;
 }
 
 .blog__item {
-    width: 33%;
+    width: 31%;
 }
 
 .blog__header {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .blog__img {
@@ -868,6 +869,10 @@ hr {
     line-height: 1;
 }
 
+.blog__content {
+    margin-bottom: 10px;
+}
+
 .blog__title {
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -882,4 +887,29 @@ hr {
 
 .blog__title a:hover {
     text-decoration: underline;
+}
+
+.blog__text {
+    font-size: 15px;
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.blog__footer {
+    padding-top: 14px;
+    border-top: 1px solid #e5e5e5;
+    color: #999;
+    font-weight: 300px;
+    font-style: italic;
+}
+
+.blog__footer__item {
+    vertical-align: bottom;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.blog__footer__item i {
+    color: #95e1d3;
 }
