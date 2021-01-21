@@ -28,7 +28,8 @@ hr {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -168,12 +169,12 @@ hr {
     z-index: 1;
 }
 
-.intro__slider__inner {
+.intro__slider-inner {
     display: flex;
     justify-content: space-between;
 }
 
-.intro__slider__item {
+.intro__slider-item {
     padding: 20px 0;
     
     border-top: 3px solid #fff;
@@ -188,11 +189,11 @@ hr {
     text-transform: uppercase;
 }
 
-.intro__slider__item.active {
+.intro__slider-item.active {
     opacity: 1;
 }
 
-.intro__slider__item.active:before {
+.intro__slider-item.active:before {
     content: "";
     width: 70px;
     height: 3px;
@@ -206,7 +207,7 @@ hr {
     z-index: 1;
 }
 
-.intro__slider__num {
+.intro__slider-num {
     font-size: 24px;
     font-weight: bold;
 }
@@ -253,13 +254,14 @@ hr {
 
 .section__content {
     display: flex;
-    margin-top: 80px;
+    margin: 80px -15px 0 -15px;
     justify-content: space-between;
 }
 
 
 .content__item {
-    width: 380px;
+    width: 33.3333%;
+    padding: 0 15px;
 
     align-items: center;
 }
@@ -283,6 +285,8 @@ hr {
 .item__img img {
     display: block;
     transition: opacity .2s linear;
+    max-width: 100%;
+    height: auto;
 }
 
 .item__inner:hover .item__img img {
@@ -317,6 +321,7 @@ hr {
 
 .stats__inner {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .stats__item {
@@ -349,14 +354,19 @@ hr {
 
 .services {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .services__item {
-    flex: 1 1 0;
+    width: 33.3333%;
 
-    padding-left: 85px;
-    padding-right: 35px;
+    padding: 0 35px 40px 85px;
     position: relative;
+    margin-bottom: 40px;
+}
+
+.services__item--border {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .services__icon {
@@ -393,6 +403,9 @@ hr {
 
 .devices__item {
     display: block;
+
+    max-width: 100%;
+    height: auto;
 }
 
 .devices__item--iphone {
@@ -404,10 +417,19 @@ hr {
 
 .service__content {
     display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
 }
 
 .service__item {
    width: 50%;
+   padding: 0 15px;
+}
+
+.service__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .faq__header {
