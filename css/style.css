@@ -696,6 +696,16 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 -15px;
+}
+.logos__item {
+    padding: 0 15px;
+}
+
+.logos__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .section--works {
@@ -712,6 +722,7 @@ hr {
 
 .works__item {
     position: relative;
+    width: 100%;
 
     background: linear-gradient(to bottom, #f38181, #fce38a);
 }
@@ -790,6 +801,8 @@ hr {
     margin-right: 30px;
     padding: 0;
     border: 0;
+    width: 150px;
+    height: 150px;
 }
 
 .section--clients {
