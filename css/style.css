@@ -4,8 +4,8 @@ body {
     font-size: 15px;
     color: #333;
     line-height: 1.6;
-    overflow-x: hidden;
 }
+
 
 *,
 *:before,
@@ -24,6 +24,10 @@ hr {
     border: 0;
     margin: 40px 0;
     height:  1px;
+}
+
+.page {
+    overflow: hidden;
 }
 
 .container {
@@ -863,6 +867,7 @@ hr {
 
 .blog {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -990,8 +995,14 @@ hr {
 
 .footer__inner {
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 70px;
+    margin: 0 -15px;
     justify-content: space-between;
+}
+
+.footer__col {
+    padding: 0 15px;
 }
 
 .footer__col--mogo {
@@ -1160,12 +1171,14 @@ hr {
 }
 
 .footer__instagram-item {
-    width: 32.3333%;
+    width: 33%;
     border-bottom: 1px solid #fff;
 }
 
 .footer__instagram-item img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .footer__instagram-item-text {
